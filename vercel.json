@@ -1,7 +1,7 @@
 {
 
    "rewrites":  [
-           { "src": "/[^.]+", "dest": "/biovida", "status": 200 }
+           { "src": "/[^.]+", "destination": "/biovida", "status": 200 }
     ]
 
 }
