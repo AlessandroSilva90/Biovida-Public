@@ -9,7 +9,7 @@ import MainPg from "./Pages/MainPg";
 
 const Rotas = () => {
   return (
-    <Router basename="/biovida">
+    <Router basename="biovida.vercel.app">
       <Routes>
         <Route exact path="/biovida/" element={<MainPg />} />
       </Routes>
