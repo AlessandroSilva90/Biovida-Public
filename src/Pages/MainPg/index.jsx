@@ -11,38 +11,19 @@ const MainPg = () => {
 
   async function openLaudo(e) {
     e.preventDefault();
-    const response = await listExames(cd_pedido, cpf);
-    if (response == "Com valores") {
-      window.open(
-        `http://138.94.25.34:9097/wsp/public/biovidaLaudos.php?pedido=${cd_pedido}`
-      );
-    } else if (response == "CPF INVALIDO") {
+    
       Swal.fire({
-        icon: "error",
-        title: "CPF INVÁLIDO",
-        text: "Tente novamente, e revise o CPF. Caso persista, entre em contato com a instituição para atualizar seu cadastro.",
-        // footer: '<a href="#">Why do I have this issue?</a>'
+        icon: "success",
+        title: "Laudo irá aparecer em breve!",
+        text: "É só um teste, o backend não foi finalizado!",
       });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Não há nenhum laudo disponível ainda",
-        // text: "Something went wrong!",
-        // footer: '<a href="#">Why do I have this issue?</a>'
-      });
-    }
-    // console.log(response)
   }
 
   return (
     <div className="content">
-      {/* <div className="fullColorTriangle"></div> */}
       <div className="triagleMPage">
         <div className="contentHeaderTriagle">
           <h1>BIOVIDA SANTA CASA</h1>
-          {/* <p>Este é o sistema do Laboratório BIOVIDA Santa Casa de Misericórdia de Sobral. Através dele você
-                    poderá realizar a busca pelo seu exame sem a necessidade de se deslocar até o hospital.
-                    Além de agilizar os serviços hospitalares, também será mais pratico para você</p> */}
         </div>
       </div>
       <div className="explainSection">
