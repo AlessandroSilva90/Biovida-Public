@@ -9,7 +9,7 @@ import MainPg from "./Pages/MainPg";
 
 const Rotas = () => {
   return (
-    <Router>
+    <Router basename="/biovida">
       <Routes>
         <Route exact path="/biovida/" element={<MainPg />} />
       </Routes>
