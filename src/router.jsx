@@ -11,7 +11,7 @@ const Rotas = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="biovida/" element={<MainPg />} />
+        <Route exact path="/biovida/" element={<MainPg />} />
       </Routes>
     </Router>
   );
