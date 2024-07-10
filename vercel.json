@@ -1,15 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/biovida/.*",
-      "dest": "/index.html"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": ".*",
-      "dest": "/index.html"
-    }
-  ]
+"routes": [
+  { "src": "/biovida", "dest": "/" }]
 }
