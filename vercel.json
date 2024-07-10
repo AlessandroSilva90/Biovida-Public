@@ -1,7 +1,15 @@
 {
-
-   "rewrites":  [
-           { "source": "/[^.]+", "destination": "/biovida", "status": 200 }
-    ]
-
+  "routes": [
+    {
+      "src": "/biovida/.*",
+      "dest": "/index.html"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+  ]
 }
