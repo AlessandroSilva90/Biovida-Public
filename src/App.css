@@ -1,0 +1,191 @@
+/* CORES DO SISTEMA
+#38bcbc
+#58e3a8
+#51a595
+
+CINZA DO FOOTER -> color: rgb(145, 145, 145);
+  */
+
+#root {
+  /* max-width: 1280px; */
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.content {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+.fullColorTriangle {
+  background-color: #38bcbc;
+  height: 4rem;
+}
+.triagleMPage {
+  height: 20rem;
+  margin: 0;
+  background-image: radial-gradient(
+      120% 100% at top left,
+      transparent 92%,
+      #fff 92.5%
+    ),
+    linear-gradient(135deg, #58e3a8 0%, #58e3a8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentHeaderTriagle {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHeaderTriagle p {
+  width: 20rem;
+  justify-content: flex-start;
+  font-weight: bold;
+  padding-left: 4rem;
+}
+
+.HeaderSquare {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(to right top, #58e3a8 50%, #ffff 50.3%);
+}
+
+.contentHeaderSquare {
+  background-color: #58e3a8;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.explainSection img {
+  width: 28rem;
+}
+
+.explainSection p {
+  width: 20%;
+  color: #51a595;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.optionsManifest {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5),
+    0 0px 0 1px rgba(10, 10, 10, 0.05);
+  background-color: white;
+  padding: 1rem;
+  width: 70%;
+}
+
+.consultaManifest {
+  display: flex;
+  flex-wrap: wrap;
+}
+.consultaManifest form {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  justify-self: center;
+}
+
+.consultaManifest button {
+  border-radius: 0.5rem;
+  width: 20rem;
+  border: none;
+  background-color: #51a595;
+}
+
+.contentInputsManifest {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  font-weight: bold;
+}
+.contentInputsManifest input {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(167, 167, 167);
+}
+
+.footer {
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(145, 145, 145);
+}
+
+.footerContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer label {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.SocialMedias {
+  width: 6rem;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 1rem;
+  transition: transform 0.2s;
+}
+
+.SocialMedias img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .explainSection {
+    flex-wrap: wrap;
+  }
+
+  .explainSection img {
+    width: 23rem;
+  }
+
+  .explainSection p {
+    width: 90%;
+  }
+
+  .contentHeaderSquare {
+    padding: 0px;
+    padding-bottom: 5rem;
+  }
+
+  .footer {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+
+  .consultaManifest button {
+    height: 3rem;
+  }
+}

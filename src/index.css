@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "AmsiPro-Black";
+  src: local("amsi"),
+    url("../src/fonts/amsi/AmsiPro-Black.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "AmsiPro-Black";
+  color: white;
+}
+
+body {
+  margin-top: 5rem;
+  /* margin-bottom: -4rem; */
+  display: flex;
+  /* place-items: center; */
+  width: 100%;
+  min-height: 95vh;
+}
