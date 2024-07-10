@@ -1,4 +1,9 @@
 {
-"routes": [
-  { "src": "/biovida", "dest": "/" }]
+
+  "rewrites": [
+
+    { "source": "/(.*)", "destination": "/" }
+
+  ]
+
 }
