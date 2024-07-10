@@ -1,5 +1,3 @@
-import { Navbar } from "react-bootstrap";
-
 import lab from "../../img/lab.jpg";
 import insta from "../../img/insta.png";
 import facebook from "../../img/facebook.png";
